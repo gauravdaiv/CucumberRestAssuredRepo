@@ -17,7 +17,7 @@ public class MyCircuitStepDefs {
 	@Given("^user start the rest assured test$")
 	public void user_start_the_rest_assured_test() {
 		
-	res = RestAssured.given().get("http://ergast.com//api/f1/2017/circuits.json");
+	res = RestAssured.given().get("http://ergast.com/api/f1/drivers.json");
 	int statuscode = res.getStatusCode();
 	//Assert.assertTrue(expStatusCode==statuscode);
 	   
