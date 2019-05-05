@@ -17,9 +17,9 @@ public class MyGoogleStepDefs {
 	@Given("^I want to open google$")
 	public void i_want_to_open_google()  {
 		
-		System.out.println("Hitting google.com");		
+				
 		res = RestAssured.given().get("https://www.google.com");
-	 
+		System.out.println("Hitting google.com");
 	}
 
 	@Then("^I want to check \"([^\"]*)\" status code$")
